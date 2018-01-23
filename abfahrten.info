@@ -1,0 +1,27 @@
+abfahrten.php?q=1+2+3 
+
+liefert die aktuellen Abfahrten der Haltestellen Heumarkt, Neumarkt, Poststraße.
+
+Haltestellennummern siehe unter 
+
+http://online-service.kvb-koeln.de/geoserver/OPENDATA/ows?Service=WFS&version=1.0.0&request=GetFeature&typeName=%20ODENDATA:haltestellen
+
+Dort z.B.:
+
+<gml:featureMember>
+    <OPENDATA:haltestellen fid="haltestellen.fid--32003a32_1611f137861_7e1a">
+      <OPENDATA:ASS>112</OPENDATA:ASS>
+      <OPENDATA:Name>Heumarkt</OPENDATA:Name>
+      <OPENDATA:Kurzname>HMG</OPENDATA:Kurzname>
+      <OPENDATA:Haltestellenbereich>1</OPENDATA:Haltestellenbereich>
+      <OPENDATA:Koordinate>
+        <gml:Point srsName="http://www.opengis.net/gml/srs/epsg.xml#4326">
+          <gml:coordinates xmlns:gml="http://www.opengis.net/gml" decimal="." cs="," ts=" ">6.95957377,50.93570453</gml:coordinates>
+        </gml:Point>
+      </OPENDATA:Koordinate>
+      <OPENDATA:Betriebsbereich>STRAB</OPENDATA:Betriebsbereich>
+      <OPENDATA:Linien>1 7 9</OPENDATA:Linien>
+    </OPENDATA:haltestellen>
+  </gml:featureMember>
+
+Der Eintrag <OPENDATA:Haltestellenbereich>1</OPENDATA:Haltestellenbereich> ist es!
